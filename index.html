@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Quote Generator</title>
-    
-    <!-- Heropatterns.com website is used for generating its background and monserat font is also used for the font  -->
 </head>
+
 <body>
     <div class='design'>
             <div class="actual-quote">
                 <i class="fa-solid fa-quote-left"></i>
-                <span id="quote">Afghanistan is a lovely place to live in</p>
+                <span id="quote">The world is a better place to live in</p>
             </div>
-            <div id="author">James Bond</div>
+            <div id="author">Ferdous Noorzai</div>
             <div class="buttons">
                 <button class="twitter" value="Twitter" onclick="location.href='https://www.twitter.com'">
                     <i class="fa-brands fa-3x fa-twitter"></i>
@@ -24,7 +23,19 @@
                 <button class="twitter" id="newQuote" value="New Quote">New Quote</button>
             </div>
     </div>  
+    <div id="block"></div>
+    <hr>
+    <article>
+        <footer>
+            <p>© Copyright Ferdous Noorzai <span id="date"></span></p>
+        </footer>
+    </article>
 
+    <script>
+        let date = document.getElementById('date');
+        let newDate = new Date().getFullYear();
+        date.innerHTML = newDate;
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
